@@ -27,7 +27,7 @@ module.exports = function(grunt) {
           build: {
             options: {
                 paths: ['less'],
-                compress: false,
+                compress: true,
                 cleancss: false
             },
             files: {
