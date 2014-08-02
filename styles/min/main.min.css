@@ -489,6 +489,11 @@ textarea:focus {
   -moz-transition: opacity 600ms ease;
   -o-transition: opacity 600ms ease;
   transition: opacity 600ms ease;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 .fade-in.faded {
   opacity: 1;
@@ -498,6 +503,11 @@ textarea:focus {
   -moz-transition: 500ms;
   -o-transition: 500ms;
   transition: 500ms;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 .translate-in.translated {
   -webkit-transform: translateX(0);

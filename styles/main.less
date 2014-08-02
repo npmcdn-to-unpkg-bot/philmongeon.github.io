@@ -29,10 +29,10 @@
 .text--right { text-align:right; }
 .text--left { text-align:left; }
 
-.fade-in { opacity:0; .transition(opacity 600ms ease); }
+.fade-in { opacity:0; .transition(opacity 600ms ease); .backface-visibility( hidden ); }
 .fade-in.faded { opacity:1; }
 
-.translate-in { .transition(500ms); }
+.translate-in { .transition(500ms); .backface-visibility( hidden ); }
 .translate-in.translated { .translateX(0); }
 
 .translate-from-left { .translateX(-300px); }
