@@ -2,6 +2,7 @@ var Philz = window.Philz || {};
 
 Philz.els = {
   window:   $(window),
+  body:     $('body'),
   child:    $('.description'),
   fade_in:  $('.fade-in'),
   trans_in: $('.translate-in')
@@ -24,6 +25,7 @@ Philz.centerChild = function() {
 
 Philz.els.window.on({
   load: function() {
+    Philz.els.body.addClass('loaded');
     Philz.els.window.trigger('resize');
     Philz.animate();
   }
