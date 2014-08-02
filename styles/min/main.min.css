@@ -884,13 +884,13 @@ a:hover {
 html,
 body {
   width: 100%;
+  background: #25271e;
   overflow-x: hidden;
 }
 body {
   font-family: 'Georgia', serif;
   text-align: center;
   color: #f3f3f3;
-  background: #25271e;
 }
 /* ==============================
   #Figures / Images
