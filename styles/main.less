@@ -445,7 +445,12 @@ header {
     .description {
       h5 { margin-bottom:10px; }
       p { margin-bottom:0; }
-      a { color:darken(@primary, 40%) }
+      a { 
+        color:darken(@primary, 40%);
+        &:hover {
+          color:darken(@primary, 50%);
+        }
+      }
     }
 
   }
@@ -460,6 +465,15 @@ header {
 
   .image-right .row .col {
     float:right;
+  }
+
+  img {
+    .transition(300ms);
+    .backface-visibility(hidden);
+    .scale(1);
+    &:hover {
+      .scale(1.02);
+    }
   }
 
 }
