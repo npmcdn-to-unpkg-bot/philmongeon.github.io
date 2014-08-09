@@ -17,10 +17,9 @@ Philz = {
 
   centerChild: function() {
     this.els.child.each(function() {
-      var container, margin_top, section;
-      container = $(this);
-      section = container.parent();
-      margin_top = ( (section.height() - container.height()) / 2 ) - 10;
+      var container = $(this),
+          section = container.parent(),
+          margin_top = ( (section.height() - container.height()) / 2 ) - 10;
       container.css('margin-top', margin_top);
     });
   },
@@ -29,8 +28,8 @@ Philz = {
     this.els.window.on({
       load: function() {
         Philz.els.body.addClass('loaded');
-        Philz.els.window.trigger('resize');
         Philz.animate();
+        Philz.els.window.trigger('resize');
       },
       resize: function() {
        Philz.centerChild();
@@ -40,6 +39,4 @@ Philz = {
 
 };
 
-(function(){
-  Philz.init();
-})();
+Philz.init();

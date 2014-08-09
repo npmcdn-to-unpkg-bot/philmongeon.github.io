@@ -13,12 +13,7 @@ module.exports = function(grunt) {
                     beautify: false,
                 },
                 files: {
-                    'scripts/min/main.min.js':
-                        [
-                            'scripts/vendor/modernizr.js',
-                            'scripts/vendor/respond.js',
-                            'scripts/main.js'
-                        ]
+                    'scripts/min/main.min.js': 'scripts/main.js'
                 }
             }
         },
