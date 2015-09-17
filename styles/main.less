@@ -441,7 +441,7 @@ header {
     background:@white;
     color:@black;
     position:relative;
-    border-bottom:1px solid @white; // fix backface-visibility bug in chrome
+    outline:1px solid transparent;
     
     .description {
       h5 { margin-bottom:10px; }
@@ -472,6 +472,9 @@ header {
     .transition(300ms);
     .backface-visibility(hidden);
     .scale(1);
+    display:block;
+    width:100%;
+    height:auto;
     &:hover {
       .scale(1.02);
     }
