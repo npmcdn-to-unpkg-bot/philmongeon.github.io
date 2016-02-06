@@ -13,7 +13,7 @@
 @primary: #D0E799;
 @white: #f3f3f3;
 @grey: #ccc;
-@black: #25271E;
+@black: #252429;
 
 /* ==============================
 	#Helpers
@@ -390,7 +390,7 @@ a {
 ============================== */
 html, body {
   width:100%;
-  background:@black;
+  background:linear-gradient(to bottom, lighten(@black, 2%) 0%, darken(@black, 5%) 100%);
   overflow-x: hidden;
 }
 
@@ -441,7 +441,7 @@ header {
     background:@white;
     color:@black;
     position:relative;
-    outline:1px solid transparent;
+    border:1px solid lighten(@black, 5%);
     
     .description {
       h5 { margin-bottom:10px; }
