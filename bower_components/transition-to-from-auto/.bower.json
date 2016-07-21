@@ -1,0 +1,41 @@
+{
+  "name": "transition-to-from-auto",
+  "homepage": "https://github.com/75lb/transition-to-from-auto",
+  "authors": [
+    "Lloyd Brookes <75pound@gmail.com>",
+    "Bogdan Chadkin <trysound@yandex.ru>"
+  ],
+  "description": "perform CSS transitions to and from 'auto'",
+  "main": "dist/transition-to-from-auto.js",
+  "moduleType": [
+    "amd",
+    "globals",
+    "node"
+  ],
+  "keywords": [
+    "css",
+    "transition",
+    "to",
+    "from",
+    "auto"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "example",
+    "jsdoc2md"
+  ],
+  "version": "0.5.2",
+  "_release": "0.5.2",
+  "_resolution": {
+    "type": "version",
+    "tag": "v0.5.2",
+    "commit": "f48ef0d3a64d1f6955b9c46974dd8820e1f15cee"
+  },
+  "_source": "https://github.com/75lb/transition-to-from-auto.git",
+  "_target": "~0.5.2",
+  "_originalSource": "transition-to-from-auto"
+}

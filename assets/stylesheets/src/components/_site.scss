@@ -1,0 +1,48 @@
+.wrap {
+	@include outer-container;
+	padding:$gutter;
+	@media(max-width:500px) {
+		padding:$gutter/2;
+	}
+}
+
+h1 {
+	@extend h2;
+	margin:0 0 $gutter/2 0; 
+	padding:0;
+	text-transform:uppercase;
+	@include animateEl('headerIn', fadeLeftIn, 750ms, 20px);
+}
+
+p {
+	margin:0 0 $gutter 0;
+	padding:0;
+	color:#7a7a7a;
+	@include animateEl('introIn', fadeLeftIn, 750ms, 20px);
+}
+
+.projects {
+	column-count: 3;
+  	column-gap: $gutter;
+  	@media(max-width:800px) {
+  		column-count:2;
+  	}
+  	@media(max-width:666px) {
+  		column-count:1;
+  	}
+	a {
+		break-inside: avoid;
+		border-left:3px solid;
+		padding-left:$gutter/2;
+		line-height:1;
+		display:block;
+		margin: 0 0 $gutter 0;
+		@include animateEl('projectIn', fadeLeftIn, 750ms, 20px);
+	}
+}
+
+@for $i from 1 through 20 {
+  .projects a:nth-child(#{$i}) { 
+	animation-delay: 20ms * $i;
+  }
+}

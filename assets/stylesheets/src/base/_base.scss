@@ -1,0 +1,46 @@
+// Bitters 1.2.0
+// http://bitters.bourbon.io
+// Copyright 2013-2015 thoughtbot, inc.
+// MIT License
+
+@import "reset";
+
+@import "variables";
+
+// Neat Settings -- uncomment if using Neat -- must be imported before Neat
+@import "grid-settings";
+
+@import "buttons";
+@import "forms";
+@import "lists";
+@import "tables";
+@import "typography";
+
+/*
+*	Bootstrap - Collapse
+* ================================================= */
+
+.collapse {
+  max-height: 0;
+  overflow:hidden;
+}
+
+.collapse.in {
+   max-height: none;
+}
+
+
+.collapsing {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  -webkit-transition-timing-function: ease;
+       -o-transition-timing-function: ease;
+          transition-timing-function: ease;
+  -webkit-transition-duration: .35s;
+       -o-transition-duration: .35s;
+          transition-duration: .35s;
+  -webkit-transition-property: height, visibility;
+       -o-transition-property: height, visibility;
+          transition-property: height, visibility;
+}

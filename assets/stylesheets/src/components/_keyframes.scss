@@ -1,0 +1,211 @@
+@keyframes FadeIn {
+  
+	0% {
+		opacity:0;
+	}
+
+	100% {
+		opacity:1;
+	}
+
+}
+
+@keyframes FadeOut {
+  
+	0% {
+		opacity:1;
+	}
+
+	100% {
+		opacity:0;
+	}
+
+}
+
+
+@keyframes FadeUpIn {
+  
+	0% {
+		opacity:0;
+		transform: translate3d(0,200px,0);
+	}
+
+	100% {
+		opacity:1;
+		transform: translate3d(0,0,0);
+	}
+
+}
+
+@keyframes FadeLeftIn {
+  
+	0% {
+		opacity:0;
+		transform: translate3d(-100%,0,0);
+	}
+
+	100% {
+		opacity:1;
+		transform: translate3d(0,0,0);
+	}
+
+}
+
+@keyframes FadeRightIn {
+  
+	0% {
+		opacity:0;
+		transform: translate3d(100%,0,0);
+	}
+
+	100% {
+		opacity:1;
+		transform: translate3d(0,0,0);
+	}
+
+}
+
+@keyframes FadeDownOut {
+  
+	0% {
+		opacity:1;
+		transform: translate3d(0,0,0);
+	}
+
+	100% {
+		opacity:0;
+		transform: translate3d(0,200px,0);
+	}
+
+}
+
+@mixin animateEl( $animationName, $animationType, $duration, $distance: 0, $timing: ease ) {
+
+	@include animation-name($animationName);
+	@include animation-fill-mode(both);
+	@include animation-duration($duration);
+	@include animation-timing-function($timing);
+
+	//fade in
+
+	@if $animationType == 'fadeIn' {
+
+		@keyframes #{$animationName} {
+
+			0% {
+				opacity:0;
+			}
+
+			100% {
+				opacity:1;
+			}
+
+		}
+
+	}
+
+	//fade up in
+
+	@if $animationType == 'fadeUpIn' {
+
+
+		@keyframes #{$animationName} {
+
+			0% {
+				opacity:0;
+				transform: translate3d(0,$distance,0);
+			}
+
+			100% {
+				opacity:1;
+				transform: translate3d(0,0,0);
+			}
+
+		}
+
+	}
+
+	//fade down in
+
+	@if $animationType == 'fadeDownIn' {
+
+
+		@keyframes #{$animationName} {
+
+			0% {
+				opacity:0;
+				transform: translate3d(0,-$distance,0);
+			}
+
+			100% {
+				opacity:1;
+				transform: translate3d(0,0,0);
+			}
+
+		}
+
+	}
+
+	//fade left in
+
+	@if $animationType == 'fadeLeftIn' {
+
+
+		@keyframes #{$animationName} {
+
+			0% {
+				opacity:0;
+				transform: translate3d(-$distance,0,0);
+			}
+
+			100% {
+				opacity:1;
+				transform: translate3d(0,0,0);
+			}
+
+		}
+
+	}
+	
+	//fade right in
+
+	@if $animationType == 'fadeRightIn' {
+
+
+		@keyframes #{$animationName} {
+
+			0% {
+				opacity:0;
+				transform: translate3d($distance,0,0);
+			}
+
+			100% {
+				opacity:1;
+				transform: translate3d(0,0,0);
+			}
+
+		}
+
+	}
+
+	//up in
+
+	@if $animationType == 'upIn' {
+
+
+		@keyframes #{$animationName} {
+
+			0% {
+				transform: translate3d(0,$distance,0);
+			}
+
+			100% {
+				transform: translate3d(0,0,0);
+			}
+
+		}
+
+	}
+
+
+}
