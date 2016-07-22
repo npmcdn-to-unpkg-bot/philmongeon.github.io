@@ -3757,7 +3757,8 @@ header {
   border-left: 4px solid;
   padding: 0 20px;
   display: block;
-  margin-bottom: 45px; }
+  margin-bottom: 45px;
+  line-height: 1.2; }
   @media (min-width: 769px) {
     .projects a {
       float: left;
