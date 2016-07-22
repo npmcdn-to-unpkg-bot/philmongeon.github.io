@@ -17,9 +17,6 @@ body.light {
 .wrap {
 	@include outer-container;
 	padding:100px $gutter;
-	@media(max-width:500px) {
-		padding:$gutter/2;
-	}
 }
 
 
