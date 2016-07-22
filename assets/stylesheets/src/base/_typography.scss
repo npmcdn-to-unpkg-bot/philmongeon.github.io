@@ -55,7 +55,10 @@ p {
 a {
   color: $action-color;
   text-decoration: none;
-  transition: color 5s, opacity .3s;
+  transition: color 5s, opacity .5s;
+  &:hover {
+    opacity:0.55;
+  }
 }
 
 hr {
