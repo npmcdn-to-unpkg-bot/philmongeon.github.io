@@ -11,7 +11,7 @@ var randomColor = require('../../../bower_components/randomcolor/randomColor');
 			var speed = 7500;
 
 			var luminosity_list = ['light', 'dark'];
-			var hue_list = ['red', 'orange', 'green', 'blue', 'purple', 'pink'];
+			var hue_list = ['red', 'orange', 'green', 'blue', 'purple', 'pink', 'yellow'];
 
 			// var luminosity = luminosity_list[Math.floor(Math.random()*luminosity_list.length)];
 			var luminosity = 'light';
