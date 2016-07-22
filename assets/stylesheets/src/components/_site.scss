@@ -41,22 +41,21 @@ header {
 }
 
 .projects {
-	column-count: 3;
-  	column-gap: $gutter;
-  	font-size:0.95em;
-  	@media(max-width:800px) {
-  		column-count:2;
-  	}
-  	@media(max-width:666px) {
-  		column-count:1;
-  	}
+	@include clearfix();
 	a {
 		break-inside: avoid;
 		border-left:4px solid;
 		padding:0 $gutter/2;
-		line-height:1;
 		display:block;
-		margin:0 0 50px 0;
+		margin-bottom:50px;
+		@media(min-width:769px) {
+			@include span-columns(4);
+			@include omega(3n);
+		}
+		@media(min-width:650px) and (max-width:768px) {
+			@include span-columns(6);
+			@include omega(2n);
+		}
 	}
 }
 
