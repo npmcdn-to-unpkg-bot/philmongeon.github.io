@@ -1,29 +1,53 @@
+body.dark {
+	background:#fafafa;
+	color:white;
+	h1,h2,p {
+		color:black;
+	}
+}
+
+body.light {
+	background:#222;
+	color:white;
+	h1,h2,p {
+		color:white;
+	}
+}
+
 .wrap {
 	@include outer-container;
-	padding:$gutter;
+	padding:100px $gutter;
 	@media(max-width:500px) {
 		padding:$gutter/2;
 	}
 }
 
-h1 {
-	@extend h2;
-	margin:0 0 $gutter/2 0; 
-	padding:0;
-	text-transform:uppercase;
-	@include animateEl('headerIn', fadeLeftIn, 750ms, 20px);
-}
 
-p {
-	margin:0 0 $gutter 0;
-	padding:0;
-	color:#7a7a7a;
-	@include animateEl('introIn', fadeLeftIn, 750ms, 20px);
+header {
+	margin-bottom:80px;
+
+	h1 {
+		@extend h3;
+		margin:0 0 5px 0; 
+		padding:0;
+		font-weight:bold;
+		@include animateEl('headerIn', fadeLeftIn, 750ms, 20px);
+	}
+
+	p {
+		margin:0;
+		padding:0;
+		font-size:0.9em;
+		color:#ccc;
+		@include animateEl('introIn', fadeLeftIn, 750ms, 20px);
+	}
+
 }
 
 .projects {
 	column-count: 3;
   	column-gap: $gutter;
+  	font-size:0.95em;
   	@media(max-width:800px) {
   		column-count:2;
   	}
@@ -32,12 +56,15 @@ p {
   	}
 	a {
 		break-inside: avoid;
-		border-left:3px solid;
-		padding-left:$gutter/2;
+		border-left:4px solid;
+		padding:0 $gutter/2;
 		line-height:1;
 		display:block;
-		margin: 0 0 $gutter 0;
+		margin:0 0 50px 0;
 		@include animateEl('projectIn', fadeLeftIn, 750ms, 20px);
+		&:hover {
+			opacity:0.3;
+		}
 	}
 }
 
@@ -45,4 +72,12 @@ p {
   .projects a:nth-child(#{$i}) { 
 	animation-delay: 20ms * $i;
   }
+}
+
+
+footer {
+	font-size:0.9em;
+	margin-top:40px;
+	padding-top:$gutter/2;
+	border-top:1px solid lighten(#222, 5%);
 }

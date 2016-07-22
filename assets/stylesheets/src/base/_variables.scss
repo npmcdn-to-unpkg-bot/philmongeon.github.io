@@ -1,6 +1,6 @@
 // Typography
 $base-font-family: 'Open Sans', sans-serif;
-$heading-font-family: $base-font-family;
+$heading-font-family: 'PT Serif', serif;
 
 // Font Sizes
 $base-font-size: 1em;
@@ -31,16 +31,16 @@ $red:#e74c3c;
 $yellow: #fab613;
 
 // Font Colors
-$base-font-color: #333;
+$base-font-color: white;
 $action-color: $yellow;
-$heading-font-color: black;
+$heading-font-color: white;
 
 // Border
 $base-border-color: $border-gray;
 $base-border: 1px solid $base-border-color;
 
 // Background Colors
-$base-background-color: #fafafa;
+$base-background-color: #222;
 $secondary-background-color: tint($base-border-color, 75%);
 
 // Forms
