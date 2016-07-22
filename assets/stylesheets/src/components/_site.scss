@@ -17,6 +17,7 @@ body.light {
 .wrap {
 	@include outer-container;
 	padding:100px $gutter;
+	@include animateEl('in', fadeIn, 2000ms);
 }
 
 
@@ -28,7 +29,6 @@ header {
 		margin:0 0 5px 0; 
 		padding:0;
 		font-weight:bold;
-		@include animateEl('headerIn', fadeLeftIn, 750ms, 20px);
 	}
 
 	p {
@@ -36,7 +36,6 @@ header {
 		padding:0;
 		font-size:0.9em;
 		color:#ccc;
-		@include animateEl('introIn', fadeLeftIn, 750ms, 20px);
 	}
 
 }
@@ -58,17 +57,10 @@ header {
 		line-height:1;
 		display:block;
 		margin:0 0 50px 0;
-		@include animateEl('projectIn', fadeLeftIn, 750ms, 20px);
 		&:hover {
-			opacity:0.3;
+			opacity:0.4;
 		}
 	}
-}
-
-@for $i from 1 through 20 {
-  .projects a:nth-child(#{$i}) { 
-	animation-delay: 20ms * $i;
-  }
 }
 
 
