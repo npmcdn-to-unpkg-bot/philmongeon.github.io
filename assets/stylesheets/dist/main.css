@@ -288,8 +288,8 @@ select[multiple] {
   margin-bottom: 0.85em;
   padding: 0.56667em;
   -webkit-transition: border-color 300ms ease;
-  -moz-transition: border-color 300ms ease;
   -o-transition: border-color 300ms ease;
+  -moz-transition: border-color 300ms ease;
   transition: border-color 300ms ease;
   width: 100%; }
   input[type="color"]:hover, input[type="date"]:hover, input[type="datetime"]:hover, input[type="datetime-local"]:hover, input[type="email"]:hover, input[type="month"]:hover, input[type="number"]:hover, input[type="password"]:hover, input[type="search"]:hover, input[type="tel"]:hover, input[type="text"]:hover, input[type="time"]:hover, input[type="url"]:hover, input[type="week"]:hover, input:not([type]):hover, textarea:hover,
@@ -383,8 +383,8 @@ body {
   -moz-osx-font-smoothing: grayscale;
   overflow-y: hidden;
   -webkit-transition: 5s;
-  -moz-transition: 5s;
   -o-transition: 5s;
+  -moz-transition: 5s;
   transition: 5s; }
 
 h1, .h1,
@@ -400,8 +400,8 @@ h6, .h6 {
   padding: 0;
   color: white;
   -webkit-transition: 5s;
-  -moz-transition: 5s;
   -o-transition: 5s;
+  -moz-transition: 5s;
   transition: 5s; }
 
 h1, .h1 {
@@ -425,16 +425,16 @@ h6, .h6 {
 p {
   margin: 0 0 0.85em;
   -webkit-transition: color 5s;
-  -moz-transition: color 5s;
   -o-transition: color 5s;
+  -moz-transition: color 5s;
   transition: color 5s; }
 
 a {
   color: #fab613;
   text-decoration: none;
   -webkit-transition: color 5s, opacity .5s;
-  -moz-transition: color 5s, opacity .5s;
   -o-transition: color 5s, opacity .5s;
+  -moz-transition: color 5s, opacity .5s;
   transition: color 5s, opacity .5s; }
   a:hover {
     opacity: 0.55; }
